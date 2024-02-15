@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    footer {
+        cursor: pointer;
+        background-color: #f8f9fa;
+        color: gray;
+        text-align: center;
+      }
+  
+    .image-section {
+        position: relative;
+        text-align: center;
+        color: white; /* Set the text color */
+      }
+      .image-section img {
+        margin-top: 15px;
+        max-height: 700px; /* Adjust the value as needed */
+        max-width: 4000px;
+        width: auto;
+    }
+  
+      .image-text {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 150px;
+      }
+      .button {
+        position: absolute;
+        top: 30%; /* Adjust the top position as needed */
+        left: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-style: groove;
+        transform: translate(-50%, -50%);
+        background-color: lightblue;
+      }
+      .button:hover{
+        background-color: cornflowerblue;
+        color: rgb(0, 2, 3);
+        border-color: darkcyan;
+      }
+      .container img {
+        margin: 8px 10px; /* Adjust the margin as needed */
+        margin-top: 2px;
+      }
+      .m:hover{
+        margin-bottom: 2px;
+        color: black;
+
+      }
+      .card{
+        width: 100px;
+      }
+      nav{
+        background-color: #20c997;
+        color: black;
+      }
+
+    
+  </style>
+  
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <img src="icons8-hamburger-64.png" height="25px" alt="" srcset="">
+    <button
+      class="navbar-toggler"
+      type="button"
+      class="text-white"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="index.html"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item dropdown text-light">
+          <a
+            class="nav-link dropdown-toggle text-light"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+        
+          >
+            Topics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Album</a>
+            <a class="dropdown-item" href="#">Recepies</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">support</a>
+            <a class="dropdown-item" href="#">write for us</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-light"
+            href="contact.html"
+            tabindex="-1"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button type="button" class="btn btn-light">search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section class="image-section">
+    <h1 class="image-text" style="margin-top: 150px;"><img src="images/gif1.gif" height="100px" alt=""><img style="margin-top: 20px;" src="images/food-logo-4.webp" alt=""><img src="images/gif1.gif" height="100px" alt=""></h1>
+    <button style="margin-top: 200px;" class="btn btn-primary button"><a href="menu.html">View more</a></button> 
+    
+     
+    <img src="images/bg1.jpg" height="40px" alt="Description of the image" class="img-fluid">
+  </section>
+  <div class="card-deck" style="margin-top: 20px;">
+    <div class="card">
+      <img class="card-img-top" src="images/sanjeev kapoor.jpeg" height="300px"alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Sanjeev Kapoor</h5>
+        <p class="card-text">He is an Indian celebrity chef, entrepreneur and television personality. Kapoor hosted the TV show Khana Khazana, the longest running show of its kind in Asia</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="images/vk.jpg"  height="300px" width="350px"  alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">vikas khanna</h5>
+        <p class="card-text">Vikas Khanna is an Indian chef, restaurateur, cookbook writer, filmmaker and humanitarian. He is one of the judges of MasterChef India since its beginning.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="images/Garima-Arora.webp" height="300px" width="350px" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Garima Arora</h5>
+        <p class="card-text">Garima Arora is an Indian chef. In November 2018, she became the first Indian woman to win a Michelin star.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <form class="form-inline"  style="margin-top: 20px;">
+        <div class="form-group mb-2" style="margin-left: 20%;">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Subscribe us & eat health">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="text" class="sr-only">name</label>
+          <input type="email" class="form-control" id="inputPassword2" placeholder="abc@gmail.com">
+          
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="text" class="sr-only">name</label>
+            <input type="Name" class="form-control" id="inputPassword2" placeholder="name">
+            
+          </div>
+        <button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+      </form>
+    <div class="container" style="margin-top: 10px;">
+        <!-- Social media icons -->
+        <img src="images/facebook.png" height="15px" alt="">
+        <img src="images/instagram.png" height="15px" alt="">
+        <img src="images/linkedin.png" height="15px" alt="">
+        <img src="images/twitter.png" height="15px"  alt="">
+        <p class="m">© 2024 by The Art of Food. Powered and secured by <a href="">radhika</a>
+    </div>
+  </footer>
+ 
+  
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
+</html>

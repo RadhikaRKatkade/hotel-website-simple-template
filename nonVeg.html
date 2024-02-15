@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .navbar {
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+    
+    .navbar:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    }
+
+    nav {
+      border-bottom: 5px;
+      box-shadow: gray;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      color: aliceblue;
+    }
+    button {
+      color: wheat;
+    }
+    .row {
+      margin-top: 50px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 3%;
+    }
+    .container img {
+        margin: 8px 10px; /* Adjust the margin as needed */
+        margin-top: 2px;
+      }
+    .h1 {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: xx-large;
+      margin-top: 120px;
+      font-style: oblique;
+      color: cornflowerblue;
+    }
+    .col {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .col:hover {
+      transform: scale(1.05); /* Increase size on hover */
+    }
+    p {
+      text-align: center;
+      color: grey;
+    }
+    footer{
+        margin-left: 20%;
+    }
+    .navbar{
+        background-color: #20c997;
+        color: black;
+      }
+
+  </style>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg  fixed-top"
+    >
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <img src="icons8-hamburger-64.png" height="25px" alt="" srcset="" />
+      <button
+        class="navbar-toggler"
+        type="button"
+        class="text-white"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse text-light"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-light" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item dropdown text-light">
+            <a
+              class="nav-link dropdown-toggle text-light"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Topics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">recipes</a>
+              <a class="dropdown-item" href="#">album</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">support</a>
+              <a class="dropdown-item" href="#">write for us</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-light"
+              href="contact.html"
+              tabindex="-1"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button type="button" class="btn btn-light">search</button>
+        </form>
+      </div>
+    </nav>
+
+    <h1 class="h1"><img src="images/gif1.gif" height="100px" alt="">
+    <img src="images/food-logo-4.webp" alt=""><img src="images/gif1.gif" height="100px" alt=""></h1>
+    <div class="row">
+      <div class="col" style="margin-bottom: 20px;">
+        <img src="images/briyani.jpg" height="300px" width="350px" alt="" />
+        <center><h2>Biryani</h2></center>
+        <p>Prize: 150$</p>
+        <center>
+        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary">Buy</button></center>
+      </div>
+      <div class="col" style="margin-bottom: 20px;">
+        <img src="images/baked-fish-recipe-3.jpg" height="300px" width="350px" alt="" />
+        <center><h2>Fish</h2></center>
+        <p>Prize: 100$</p>
+        <center>
+        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary">Buy</button></center>
+      </div>
+      <div class="col" style="margin-bottom: 20px;">
+        <img src="images/kolhapuri-chicken-recipe.jpg" height="300px" width="350px" alt="" />
+        <center><h2>kolhapuri-chicken</h2></center>
+        <p>Prize: 70$</p>
+        <center>
+        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary">Buy</button></center>
+      </div>
+      <br />
+      <div class="col" style="margin-bottom: 20px;">
+        <img src="images/keema.webp" height="300px" width="350px" alt="" />
+        <center><h2>Keema</h2></center>
+        <p>Prize: 50$</p>
+        <center>
+        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary">Buy</button></center>
+      </div>
+      <div class="col" style="margin-bottom: 20px;">
+        <img src="images/spicy-chicken-curry-FT-RECIPE0321-58f84fdf7b484e7f86894203eb7834e7.jpg" height="300px" width="350px" alt="" />
+        <center><h2>Butter chiken</h2></center>
+        <p>Prize: 20$</p><center>
+        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary">Buy</button></center>
+      </div>
+      <div class="col" style="margin-bottom: 20px;">
+        <img src="images/prawn.webp" height="300px" width="350px" alt="" />
+        <center><h2>Prawn</h2></center>
+        <p>Prize: 50$</p>
+        <center>
+        <button style="margin-bottom: 5px;" type="button" class="btn btn-primary">Buy</button></center>
+      </div>
+    </div>
+    <footer>
+        <form class="form-inline" style="margin-top: 20px;">
+            <div class="form-group mb-2">
+              <label for="staticEmail2" class="sr-only">Email</label>
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="Subscribe us & eat health">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="text" class="sr-only">name</label>
+              <input type="email" class="form-control" id="inputPassword2" placeholder="abc@gmail.com">
+              
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <label for="text" class="sr-only">name</label>
+                <input type="Name" class="form-control" id="inputPassword2" placeholder="name">
+                
+              </div>
+            <button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+          </form>
+
+
+          <div class="container">
+            <!-- Social media icons -->
+            <img src="images/facebook.png" height="15px" alt="">
+            <img src="images/instagram.png" height="15px" alt="">
+            <img src="images/linkedin.png" height="15px" alt="">
+            <img src="images/twitter.png" height="15px"  alt="">
+            
+        </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
